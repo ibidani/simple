@@ -134,6 +134,7 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<modules>
+		<module>simpleapp.mdbear</module>
 		<module>simpleapp.mdbs</module>
 	</modules>
 </project>
