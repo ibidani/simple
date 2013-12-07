@@ -8,6 +8,9 @@
         <dependent-module archiveName="javaee-api-5.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javaee/javaee-api/5/javaee-api-5.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="simpleapp.sessionbeans-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/simpleapp.sessionbeans/simpleapp.sessionbeans">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="groovy-all-2.1.8.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/codehaus/groovy/groovy-all/2.1.8/groovy-all-2.1.8.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>

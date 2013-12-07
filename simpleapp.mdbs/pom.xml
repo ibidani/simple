@@ -12,7 +12,7 @@
 	<packaging>ejb</packaging>
 
 	<name>simpleapp.mdbs</name>
-	<url>http://maven.apache.org</url>
+	<url>http://svn.ual.com/repos/dfte</url>
 
 	<build>
 		<plugins>
@@ -26,12 +26,17 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>javaee</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ual.dfte</groupId>
+			<artifactId>simpleapp.sessionbeans</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
