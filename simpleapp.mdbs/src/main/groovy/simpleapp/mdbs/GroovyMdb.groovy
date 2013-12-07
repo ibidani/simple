@@ -8,6 +8,7 @@ import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 import javax.ejb.EJB;
 import simpleapp.sessionbeans.Logger;
+import simpleapp.sessionbeans.Publisher;
 
 @MessageDriven(activationConfig = [
 	@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
@@ -15,14 +16,16 @@ import simpleapp.sessionbeans.Logger;
 	mappedName = "jms/q0")
 public class GroovyMdb implements MessageListener {
 	@EJB
-	private Logger logger;
+	private Logger logger
+	@EJB
+	private Publisher pub
 	
 	public GroovyMdb() {}
 	
 	public void onMessage(Message message) {
 		if (message instanceof TextMessage) {
 			def msg = ((TextMessage)message).text
-			println "$this received TextMessage: $msg"
+			println "$this publishing: ${pub.publish(msg)}"
 			logger.log(3, msg)
 		}
 	}
