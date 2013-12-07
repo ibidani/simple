@@ -142,6 +142,6 @@
 		<module>simpleapp.mdbear</module>
 		<module>simpleapp.mdbs</module>
 		<module>simpleapp.sessionbeans</module>
-		<module>simpleapp.sessionear</module>
+		<module>simpleapp.frontear</module>
 	</modules>
 </project>

@@ -1,8 +1,10 @@
 package simpleapp.sessionbeans
 
+import javax.ejb.Local;
 import javax.ejb.Stateless;
 
-@Stateless(mappedName = 'ejb/LoggerService')
+@Stateless
+@Local(value = Logger)
 class LoggerBean implements Logger {
 
 	@Override
