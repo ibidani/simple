@@ -121,23 +121,19 @@
 			</plugin>
 		</plugins>
 	</reporting>
-	<repositories>
-		<repository>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<id>ualmaven</id>
-			<name>UAL Maven Central Repository</name>
-			<url>http://vopcpartf01.ual.com:8080/artifactory/repo/</url>
-		</repository>
-	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>ualmaven</id>
-			<name>UAL Maven Central Repository</name>
-			<url>http://vopcpartf01.ual.com:8080/artifactory/repo/</url>
-		</pluginRepository>
-	</pluginRepositories>
+<distributionManagement>
+    <repository>
+        <id>6c3c51ccd148</id>
+        <name>6c3c51ccd148-releases</name>
+        <url>http://localhost:8081/artifactory/my-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>6c3c51ccd148</id>
+        <name>6c3c51ccd148-snapshots</name>
+        <url>http://localhost:8081/artifactory/my-local</url>
+    </snapshotRepository>
+</distributionManagement>
+
 	<modules>
 		<module>simpleapp.mdbear</module>
 		<module>simpleapp.mdbs</module>
